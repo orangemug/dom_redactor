@@ -1,0 +1,220 @@
+body {
+  background-color: #323C4B;
+  background: url(/images/denim.png);
+  margin: 15px;
+  font-family: 'Changa One', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: white;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  margin: 0;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  vertical-align: baseline;
+  clear: both;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.outer {
+  margin: 0 auto;
+  width: 900px;
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+  min-height: 400px;
+  background-color: #686868;
+  border-radius: 4px;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 0.5s;
+}
+
+iframe {
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 0.5s;
+}
+
+.source {
+  display: none;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: white;
+}
+
+.preview {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: white;
+}
+
+.preview-buttons {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: black;
+  z-index: 99;
+  background-color: #E8E8E8;
+  color: #7D7D7D;
+  padding: 3px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.preview-buttons a {
+  padding: 0 3px;
+  text-decoration: underline;
+}
+
+.preview-buttons a.active {
+  color: #6D6D6D !important;
+}
+
+.panel h2 {
+  text-align: center;
+}
+
+.panel {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+}
+
+.normal {
+  left: 0;
+  right: 50%;
+}
+
+.skeleton {
+  left: 50%;
+  right: 0;
+}
+
+.panel > iframe {
+  border-width: 0px;
+}
+
+.source textarea {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-width: 0px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.buttons {
+  padding: 0 20px;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  text-align: right;
+}
+
+.buttons .buttons-inner {
+  display: inline-block;
+}
+
+@media all and (max-width: 699px) {
+  .buttons {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    text-align: center;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .skeleton {
+    display: none;
+  }
+
+  .preview-buttons {
+    display: block; 
+  }
+
+  .normal {
+    left: 0;
+    right: 0;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .github-banner {
+    display: none;
+  }
+}
+
+.buttons a {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  background-color: #969696;
+  border-color: #404040;
+  border-width: 1px;
+  border-bottom-width: 0px;
+  border-style: solid;
+
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin: 0px 2px;
+  color: #444444;
+}
+
+.buttons a.active {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #C3C3C3;
+}
+
+footer {
+  text-align: center;
+  margin: 20px;
+}
+
+.clear {
+  clear: both;
+}

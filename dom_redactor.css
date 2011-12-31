@@ -1,0 +1,29 @@
+.dom-skeleton dswrapper {
+  color: rgba(0,0,0,0) !important;
+}
+
+.dom-skeleton dswrapper {
+  position: relative;
+}
+
+.dom-skeleton h1 dswrapper,
+.dom-skeleton h2 dswrapper,
+.dom-skeleton h3 dswrapper,
+.dom-skeleton h4 dswrapper,
+.dom-skeleton h5 dswrapper,
+.dom-skeleton h6 dswrapper {
+  color: #444 !important;
+}
+
+.dom-skeleton :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > dswrapper {
+  background-color: #E4E4E4;
+}
+
+.dom-skeleton a[href] {
+  text-decoration: none;
+}
+
+.dom-skeleton a[href] dswrapper {
+  z-index: 2;
+  background-color: #9F5858;
+}

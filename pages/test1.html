@@ -1,0 +1,34 @@
+<html>
+<body>
+  <h1>DOM Redactor</h1>
+  <img style="float: right;" src="pages/badger.png" />
+  <p>abcdefghijklmnopqrs tuvwxyz abcdefghijklm nopqrst uvwxyz abcdefgh ijklmnopqrstuv wxyz abcd efghijklmnopqrstuvwx yz abcdef ghijklmno pqrstuvwxyz abcdefghij klmnopqrstu vwxyz abc defghijklmnopqrs tuvwxyz abcdefg hijklmnopqr stuvwxyz</p>
+  <img style="float: left;" src="pages/badger.png" width="100px"></img>
+  <p>abcdefghijklmnopqrs tuvwxyz abcdefghijklm nopqrst uvwxyz abcdefgh ijklmnopqrstuv wxyz abcd efghijklmnopqrstuvwx yz abcdef ghijklmno pqrstuvwxyz abcdefghij klmnopqrstu vwxyz abc defghijklmnopqrs tuvwxyz abcdefg hijklmnopqr stuvwxyz</p>
+  <p>abcdefghijklmnopqrstuvwxyz</p>
+  <p>ijltf</p>
+  <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+  <p>IJ</p>
+  <p>Builds a skeleton view of DOM content, the intended use is for displaying content to be bought whilst remaining the structure of the content</p>
+
+  <h2>Usage</h2>
+  <p>There are two steps firstly processing the content, this should be done server side using <a title="node.js official site" href="node.js">node.js</a> and can be accomplished in the following way</p>
+  <code>
+    var dom = document.getElementById('content')
+    DOMSkeleton.process(dom)
+  </code>
+
+  <p>Secondly rendering the content</p>
+  <code>
+    var dom = document.getElementById('content')
+    DOMSkeleton.render(bodyDOM)  
+  </code>
+
+  <h2>How it works</h2>
+  <ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+  </ul>
+</body>
+</html>
